@@ -10,7 +10,7 @@ const publicaciones = [
     titulo: "Tarea",
     archivo: "entradas/blog.js",
     fecha: "2026-10-13",
-    resumen: "Productos notables y sus algoritmos de resolución."
+    resumen: "Productos notables y sus algoritmos de resolución..."
   }
 
 ];

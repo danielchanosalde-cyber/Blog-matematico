@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Matemático Interactivo</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+            color: #1278ec;
+        }
+
+        header {
+            border-bottom: 2px solid #6bb5e4;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .volver {
+            color: #286c99;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #titulo {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        p {
+            cursor: pointer;
+        }
+
+        ul li {
+            cursor: pointer;
+            margin: 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        th {
+            background-color: #dbeeff;
+        }
+
+        #contenido-entrada {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="titulo" onclick="animarTitulo()">
+        Blog Matemático Interactivo
+    </h1>
+
+    <p onclick="alternarLista('conceptos')">
+        Conceptos Básicos (Haz clic aquí para mostrar u ocultar la lista)
+    </p>
+
+    <ul id="conceptos">
+        <li onclick="cambiarColorAleatorio(this)">
+            Álgebra: Manipulación de símbolos y ecuaciones.
+        </li>
+
+        <li onclick="cambiarColorAleatorio(this)">
+            Geometría: Estudio de las propiedades de figuras y espacios.
+        </li>
+
+        <li onclick="cambiarColorAleatorio(this)">
+            Cálculo: Análisis del cambio y del movimiento.
+        </li>
+
+        <li onclick="cambiarColorAleatorio(this)">
+            Estadística: Análisis y tratamiento de datos.
+        </li>
+    </ul>
+
+    <p>
+        Tabla de Fórmulas (Haz clic en cualquier celda para cambiar su color)
+    </p>
+
+    <table>
+       <p>
+    Tabla de Fórmulas (Haz clic en cualquier celda para cambiar su color)
+</p>
+
+<table>
+    <tr>
+        <th>Tema</th>
+        <th>Fórmula</th>
+    </tr>
+
+    <tr>
+        <td onclick="cambiarColorAleatorio(this)">
+            Área del triángulo
+        </td>
+
+        <td onclick="cambiarColorAleatorio(this)">
+            Base × altura ÷ 2
+        </td>
+    </tr>
+
+    <tr>
+        <td onclick="cambiarColorAleatorio(this)">
+            Teorema de Pitágoras
+        </td>
+
+        <td onclick="cambiarColorAleatorio(this)">
+            a² + b² = c²
+        </td>
+    </tr>
+
+    <tr>
+        <td onclick="cambiarColorAleatorio(this)">
+            Perímetro del círculo
+        </td>
+
+        <td onclick="cambiarColorAleatorio(this)">
+            2πr
+        </td>
+    </tr>
+</table>
+
+<!-- Productos notables -->
+
+<h2 onclick="cambiarColorAleatorio(this)">
+    Productos Notables
+</h2>
+
+<p onclick="cambiarColorAleatorio(this)">
+    Son expresiones algebraicas que siguen patrones
+    específicos y permiten simplificar cálculos.
+</p>
+
+<table>
+    <tr>
+        <th>Producto notable</th>
+        <th>Resultado</th>
+    </tr>
+
+    <tr>
+        <td onclick="cambiarColorAleatorio(this)">
+            (a + b)²
+        </td>
+
+        <td onclick="cambiarColorAleatorio(this)">
+            a² + 2ab + b²
+        </td>
+    </tr>
+
+    <tr>
+        <td onclick="cambiarColorAleatorio(this)">
+            (a - b)²
+        </td>
+
+        <td onclick="cambiarColorAleatorio(this)">
+            a² - 2ab + b²
+        </td>
+    </tr>
+</table>
+
+<!-- Binomio al cuadrado -->
+
+<h2 onclick="cambiarColorAleatorio(this)">
+    Factorización
+</h2>
+
+<p onclick="cambiarColorAleatorio(this)">
+    La factorización es el proceso inverso a desarrollar
+    productos notables. Permite expresar una ecuación
+    como multiplicación de factores.
+</p>
+
+<table>
+    <tr>
+        <th>Expresión</th>
+        <th>Factorización</th>
+    </tr>
+
+    <tr>
+        <td onclick="cambiarColorAleatorio(this)">
+            x² + 2x + 1
+        </td>
+
+        <td onclick="cambiarColorAleatorio(this)">
+            (x + 1)²
+        </td>
+    </tr>
+
+    <tr>
+        <td onclick="cambiarColorAleatorio(this)">
+            x² - 9
+        </td>
+
+        <td onclick="cambiarColorAleatorio(this)">
+            (x - 3)(x + 3)
+        </td>
+    </tr>
+</table>
+                contenidoEntrada = `
+
+    <h2>Productos notables</h2>
+    <p>Una variedad específica de binomios, de los cuales ya tenemos una forma
+    fácil de resolverlos.</p>
+    <h3>Binomio al cuadrado</h3>
+    <p>Es un binomio que está elevado al cuadrado...</p>
+    <th>(a + b)²</th>
+            <th>X²-X-3</th>
+            Los productos notables se resuelven aplicando fórmulas específicas que permiten obtener el resultado de multiplicaciones algebraicas mediante simple inspección, evitando la multiplicación término por término.  El proceso general implica identificar el tipo de producto notable, sustituir los valores en la fórmula correspondiente y simplificar el resultado final
+Los productos notables se resuelven aplicando fórmulas específicas que permiten obtener el resultado de multiplicaciones algebraicas mediante simple inspección, evitando la multiplicación término por término.  El proceso general implica identificar el tipo de producto notable, sustituir los valores en la fórmula correspondiente y simplificar el resultado final
+            </td>
+        </tr>
+    </table>
+
+    <header>
+        <a href="index.html" class="volver">
+            ← Volver al índice
+        </a>
+
+        <h1 id="titulo-entrada">
+            Bienvenido al Blog
+        </h1>
+
+        <small id="fecha-entrada">
+            Publicado el: Hoy
+        </small>
+    </header>
+
+    <main id="contenido-entrada">
+        <p>
+            Selecciona una entrada para visualizar su contenido.
+        </p>
+    </main>
+
+    <script>
+        function cambiarColorAleatorio(elemento) {
+
+            const colores = [
+                "#FFCCCC",
+                "#CCFFCC",
+                "#CCCCFF",
+                "#FFFFCC",
+                "#FFD9B3",
+                "#FFCCFF",
+                "#CCE5FF",
+                "#D5F5E3",
+                "#FADBD8",
+                "#B8860B",
+                "#FFD700",
+                "#800000",
+                "#e3e4e5",
+                "#ff6347",
+                "#5e2129",
+                "#e5e4e2"];
+
+            const indice = Math.floor(Math.random() * colores.length);
+
+            elemento.style.backgroundColor = colores[indice];
+        }
+
+        function alternarLista(id) {
+
+            const lista = document.getElementById(id);
+
+            if (lista.style.display === "none") {
+                lista.style.display = "block";
+            } else {
+                lista.style.display = "none";
+            }
+        }
+
+        function animarTitulo() {
+
+            const titulo = document.getElementById("titulo");
+
+            titulo.style.transform = "scale(1.2)";
+
+            setTimeout(() => {
+                titulo.style.transform = "scale(1)";
+            }, 300);
+        }
+    </script>
+
+</body>
+</html>
+``

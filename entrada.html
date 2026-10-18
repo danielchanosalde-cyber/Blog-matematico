@@ -86,21 +86,15 @@
     </p>
 
     <ul id="conceptos">
-
         <li>Álgebra: Manipulación de símbolos y ecuaciones.</li>
-
         <li>Geometría: Estudio de las propiedades de figuras y espacios.</li>
-
         <li>Cálculo: Análisis del cambio y del movimiento.</li>
-
         <li>Estadística: Análisis y tratamiento de datos.</li>
-
     </ul>
 
     <h2>Tabla de Fórmulas</h2>
 
     <table>
-
         <tr>
             <th>Tema</th>
             <th>Fórmula</th>
@@ -120,7 +114,6 @@
             <td>Perímetro del círculo</td>
             <td>2πr</td>
         </tr>
-
     </table>
 
     <h2>Productos Notables</h2>
@@ -144,6 +137,31 @@
         <tr>
             <td>(a − b)²</td>
             <td>a² − 2ab + b²</td>
+        </tr>
+
+        <tr>
+            <td>(a + b)(a − b)</td>
+            <td>a² − b²</td>
+        </tr>
+
+        <tr>
+            <td>(a + b)³</td>
+            <td>a³ + 3a²b + 3ab² + b³</td>
+        </tr>
+
+        <tr>
+            <td>(a − b)³</td>
+            <td>a³ − 3a²b + 3ab² − b³</td>
+        </tr>
+
+        <tr>
+            <td>(a + b)(a² − ab + b²)</td>
+            <td>a³ + b³</td>
+        </tr>
+
+        <tr>
+            <td>(a − b)(a² + ab + b²)</td>
+            <td>a³ − b³</td>
         </tr>
 
     </table>
@@ -191,6 +209,73 @@
         </tr>
 
     </table>
+
+    <h2>Ida y Regreso: Relación entre Productos Notables y Factorización</h2>
+
+    <p>
+        Los productos notables y la factorización son operaciones inversas.
+        Al desarrollar un producto notable obtenemos un polinomio (ida),
+        mientras que al factorizar recuperamos la expresión original (regreso).
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Producto notable (ida)</th>
+            <th>Desarrollo</th>
+            <th>Factorización (regreso)</th>
+        </tr>
+
+        <tr>
+            <td>(a + b)²</td>
+            <td>a² + 2ab + b²</td>
+            <td>a² + 2ab + b² = (a + b)²</td>
+        </tr>
+
+        <tr>
+            <td>(a − b)²</td>
+            <td>a² − 2ab + b²</td>
+            <td>a² − 2ab + b² = (a − b)²</td>
+        </tr>
+
+        <tr>
+            <td>(a + b)(a − b)</td>
+            <td>a² − b²</td>
+            <td>a² − b² = (a + b)(a − b)</td>
+        </tr>
+
+        <tr>
+            <td>(a + b)³</td>
+            <td>a³ + 3a²b + 3ab² + b³</td>
+            <td>a³ + 3a²b + 3ab² + b³ = (a + b)³</td>
+        </tr>
+
+        <tr>
+            <td>(a − b)³</td>
+            <td>a³ − 3a²b + 3ab² − b³</td>
+            <td>a³ − 3a²b + 3ab² − b³ = (a − b)³</td>
+        </tr>
+
+        <tr>
+            <td>(a + b)(a² − ab + b²)</td>
+            <td>a³ + b³</td>
+            <td>a³ + b³ = (a + b)(a² − ab + b²)</td>
+        </tr>
+
+        <tr>
+            <td>(a − b)(a² + ab + b²)</td>
+            <td>a³ − b³</td>
+            <td>a³ − b³ = (a − b)(a² + ab + b²)</td>
+        </tr>
+
+    </table>
+
+    <p>
+        <strong>Idea clave:</strong>
+        Desarrollar expande una expresión algebraica y factorizar la vuelve a
+        escribir como un producto de factores. Por ello, ambos procesos son
+        inversos.
+    </p>
 
     <script>
 
@@ -302,23 +387,22 @@
             document
                 .querySelectorAll("p, li, td, th, h2")
                 .forEach(elemento => elemento.addEventListener(
-                        "click",
-                        function () {
+                    "click",
+                    function () {
 
-                            cambiarTodo(this);
+                        cambiarTodo(this);
+
+                        this.style.transform =
+                            "scale(1.05)";
+
+                        setTimeout(() => {
 
                             this.style.transform =
-                                "scale(1.05)";
+                                "scale(1)";
 
-                            setTimeout(() => {
-
-                                this.style.transform =
-                                    "scale(1)";
-
-                            }, 300);
-                        }
-                    ));
-
+                        }, 300);
+                    }
+                ));
         };
 
     </script>
